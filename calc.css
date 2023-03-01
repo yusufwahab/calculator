@@ -1,0 +1,301 @@
+html {
+    
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: powderblue;
+    font-family: 'Space Mono';    
+}
+
+.page {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 10px;
+    width:600px;
+    height: 300px;
+    padding: 30px;
+    margin: 30px auto;
+    background-color: white;
+    border:2px solid white;
+    border-radius: 30px;
+    grid-template-columns: 1fr 1fr;;
+    grid-template-areas: 
+    "header sidebar"
+    "rightbar   sidebar"
+    "footer sidebar";
+    position: relative;
+    bottom: -70px;
+
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 16px;
+    color:  hsl(186, 14%, 43%);
+}
+
+.header {
+    grid-area: header;
+}
+
+.rightbar {
+    grid-area: rightbar;
+    
+}
+
+.footer {
+    grid-area: footer;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+    height: 95%;
+    border:none;
+    border-radius: 8px;
+    background-color: hsl(183, 100%, 15%); 
+    margin-top: -10px;
+
+}
+
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -6px;
+}
+
+.item-title {
+    grid-area: item-title;
+}
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: hsl(186, 14%, 43%);
+    margin-top: -20px;
+}
+
+.button {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: space-evenly;
+    gap:8px;
+    margin-top: -10px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color:hsl(186, 14%, 43%);
+    margin-top: -10px;
+}
+
+.click {
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    padding:0;
+    width: 80px;
+    height:35px;
+    border-radius: 5px;
+    font-size: 16px;
+    color:white;
+    font-family: "Space Mono";
+    font-weight: bold;
+}
+
+.custom {
+    color:hsl(186, 14%, 43%);
+    font-weight: normal;
+}
+
+.person {
+    display:grid;
+    padding: 0;
+    grid-template-areas: 
+    "image digit";
+    gap: 200px;
+}
+
+.digit {
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(183, 100%, 15%) ;
+}
+
+.image {
+    grid-area: image;
+}
+
+.digit {
+    grid-area: digit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.payment {
+    display: grid;
+    row-gap: 60px;
+    column-gap: 180px;
+    width: 100px;
+    height:100px;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 5px;
+    grid-template-areas: 
+    "tip   tip-price"
+    "plus  plus-price"
+    "checkout checkout";
+}
+
+.tip {
+    grid-area: tip;
+    color:hsl(0, 0%, 100%);
+    font-weight: normal;
+    font-size: 13px;
+    margin-left: -80px;
+
+}
+
+.tip-price {
+    grid-area: tip-price;
+    color:hsl(172, 67%, 45%);;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: -100px;
+}
+
+.plus {
+    grid-area: plus;
+    color:hsl(0, 0%, 100%);
+    font-weight: normal;
+    font-size: 13px;
+    margin-left: -80px;
+
+}
+
+.plus-price {
+    grid-area: plus-price;
+    color:hsl(172, 67%, 45%);;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: -115px;
+}
+
+
+
+.checkout  {
+  grid-area: checkout;
+    background-color: hsl(172, 67%, 45%);;
+    border: none;
+    padding: 0;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 16px;
+    height:40px;
+    font-size: 16px;
+    color:black;
+    font-family: "Space Mono";
+    font-weight: bold;
+    margin-left: -70px;
+    
+
+}
+
+.press {
+    background-color: hsl(172, 67%, 45%);;
+    border: none;
+    padding:0;
+    margin-right: 5px;
+    color:white;
+    width: 80px;
+    height:35px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Space Mono";
+    font-weight: bold; 
+
+}
+
+.button :hover {
+    background-color: hsl(172, 67%, 45%); 
+    text-decoration: bold;
+}
+
+.tip span{
+    font-size: 8px;
+    display: block;
+    color:hsl(185, 41%, 84%);
+}
+
+.plus span {
+    font-size: 8px;
+    display: block;
+    color:hsl(185, 41%, 84%);
+}
+
+.checkout:hover{
+    background-color:hsl(185, 41%, 84%);
+}
+
+.input-group {
+    position:relative;
+    margin-bottom: 20px;
+    direction: rtl;
+    width: 90%;
+}
+
+.user-input {
+    background-color: hsl(189, 41%, 97%);
+    border:2px solid hsl(189, 41%, 97%);
+    padding: 8px;
+    border-radius: none;
+    width: 95%;
+    height: 20px;
+    font-family: "Space Mono";
+    font-size: 24px;
+    color:hsl(138, 100%, 15%);
+    font-weight: 700;
+    left: 40px;
+    margin-top: -30px;
+
+}
+
+.user-input-label {
+    left: 25px;
+    left:0px;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 7px;
+    
+}
+
+.user-input:hover {
+    border: 2px solid hsl(172, 67%, 45%) ;
+}
+
+.tap {
+    background-color:hsl(189, 41%, 97%); 
+    border: none;
+    padding:0;
+    margin-right: 5px;
+    color:hsl(186, 14%, 43%);
+    width: 80px;
+    height:35px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Space Mono";
+    font-weight: bold; 
+}
+
+.tap:hover{
+    background-color:hsl(189, 41%, 97%) ;
+}
